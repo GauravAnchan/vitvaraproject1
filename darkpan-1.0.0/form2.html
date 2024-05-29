@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+        }
+        .header {
+            width: 100%;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container {
+            width: 90%;
+            max-width: 900px;
+            padding: 50px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"], input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        @media (min-width: 600px) {
+            .form-container {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Expense Management System</h1>
+    </div>
+    <div class="form-container">
+        <h2>Expense Input Form</h2>
+        <form>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id">
+
+            <label for="Description">Description:</label>
+            <input type="text" id="description" name="description">
+
+            <label for="Site">Site:</label>
+            <input type="text" id="site" name="site">
+            
+            <label for="labour-M">Labour-M:</label>
+            <input type="text" id="m_labour" name="m_labour">
+
+            <label for="labour-F">Labour-F:</label>
+            <input type="text" id="f_labour" name="f_labour">
+            
+            <label for="labourpayment">Labour Payment:</label>
+            <input type="text" id="labour_payment" name="labour_payment">
+
+            <label for="paymentmode">Payment mode:</label>
+            <input type="text" id="paymentmode" name="paymentmode">
+
+            <label for="Machine">Machine:</label>
+            <input type="text" id="machine" name="machine">
+            
+            <label for="machinepayment">Machine Payment:</label>
+            <input type="text" id="machine_payment" name="machine_payment">
+
+            
+            <label for="vendor">Vendor:</label>
+            <input type="text" id="vendor" name="vendor">
+            
+            <label for="transportation">Transportation:</label>
+            <input type="text" id="transportation" name="transportation">
+            
+            <label for="fuel">Fuel:</label>
+            <input type="text" id="fuel" name="fuel">
+            
+            <label for="food">Food:</label>
+            <input type="text" id="food" name="food">
+            
+            <label for="other-expense">Other Expense:</label>
+            <input type="text" id="other_expenses" name="other_expenses">
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

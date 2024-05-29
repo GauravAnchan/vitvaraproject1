@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <style>
+  
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  
+  input, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+ 
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Project Form 4</h1>
+    <form>
+      <div class="form-group">
+        <label for="expense">Expense:</label>
+        <input type="text" id="expense" name="expense" placeholder="Enter expense" required>
+      </div>
+      <div class="form-group">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" placeholder="Enter ID" required>
+      </div>
+      <div class="form-group">
+        <label for="site">Site:</label>
+        <input type="text" id="site" name="sitet" placeholder="site" required>
+      </div>
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="form-group">
+        <label for="type">Type:</label>
+        <select id="type" name="type" required>
+          <option value="" disabled selected>Select Type</option>
+          <option value="earthwork">Earth work</option>
+          <option value="shuttering-barbending">Shuttering and Barbending</option>
+          <option value="stone-masonry">Stone Masonry</option>
+          <option value="electrical">Electrical</option>
+          <option value="plumbing">Plumbing</option>
+          <option value="plastering">Plastering</option>
+          <option value="painting">Painting</option>
+          <option value="doors-windows">Doors and Windows</option>
+          <option value="flooring">Flooring</option>
+          <option value="interior">Interior</option>
+          <option value="other">Other Works</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="payment">Payment:</label>
+        <input type="text" id="payment" name="payment" placeholder="Enter payment" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="sqft">Sqft:</label>
+        <input type="number" id="sqft" name="sqft" placeholder="Enter square feet" required>
+      </div>
+      <div class="form-group1">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
